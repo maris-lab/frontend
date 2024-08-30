@@ -2,7 +2,7 @@
 // JComboBox that displays a list of image names.
 import java.awt.*;
 import java.awt.event.*;
-import javax.swing.*;
+import javax.swing.*; // biblioteca javax 
 
 
 public class ComboBoxFrame extends JFrame 
