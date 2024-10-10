@@ -1,13 +1,14 @@
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+// importaçao da biblioteca java 
 
 
-public class MouseTrackerFrame extends JFrame
+public class MouseTrackerFrame extends JFrame //MouseTrackerFrame esta herdando o JFrame
 {
    private final JPanel mousePanel; 
    private final JLabel statusBar;
-
+/// classe privada 
    
    public MouseTrackerFrame()
    {
@@ -74,7 +75,7 @@ public class MouseTrackerFrame extends JFrame
       public void mouseDragged(MouseEvent event)
       {
          statusBar.setText(String.format("Dragged at [left:%d, top: %d, right: %d, bottom: %d]", 
-            event.getX(), event.getY(), mousePanel.getWidth() - event.getX(), mousePanel.getHeight() - event.getY()));
+            event.getX(), event.getY(), mousePanel.getWidth() - event.getX(), mousePanel.getHeight() - event.getY()));// distancia da borda lateral direita 
       } 
 
       
@@ -82,7 +83,7 @@ public class MouseTrackerFrame extends JFrame
       public void mouseMoved(MouseEvent event) // mouse foi movido do painel 
       {
          statusBar.setText(String.format("Moved at [left:%d,  top:%d, right: %d, bottom: %d]", 
-            event.getX(), event.getY(), mousePanel.getWidth() - event.getX(), mousePanel.getHeight() - event.getY()));
+            event.getX(), event.getY(), mousePanel.getWidth() - event.getX(), mousePanel.getHeight() - event.getY()));// distancia da vborda lateral esquierda 
       } 
    } // end inner class MouseHandler
 } // end class MouseTrackerFrame
