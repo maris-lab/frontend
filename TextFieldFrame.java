@@ -8,9 +8,9 @@ import javax.swing.JTextField;
 import javax.swing.JPasswordField;
 import javax.swing.JOptionPane;
 
-public class TextFieldFrame extends JFrame 
+public class TextFieldFrame extends JFrame // declaraçao de classe que esta recebendo a extençao do componete (TextField herdando do JFrame)
 {//declaraçao de variaveis 
-   private final JTextField textField1; 
+   private final JTextField textField1; // declaraçao da variavel 
    private final JTextField textField2; 
    private final JTextField textField3; 
    private final JPasswordField passwordField; 
@@ -19,13 +19,13 @@ public class TextFieldFrame extends JFrame
    public TextFieldFrame()
    {
       super("Testing JTextField and JPasswordField");
-      setLayout(new FlowLayout());
+      setLayout(new FlowLayout()); // define o layout( desenho da tela) 
 
       textField1 = new JTextField(10); 
       add(textField1);
       
       textField2 = new JTextField("Enter your text here now");
-      add(textField2); 
+      add(textField2); // construtor com a string de argumentos 
 
       
       textField3 = new JTextField("Uneditable text field", 21);
